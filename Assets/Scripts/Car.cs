@@ -2,17 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Car : MonoBehaviour
+public class Car
 {
-    // Start is called before the first frame update
-    void Start()
+
+    // atributes of the class
+    public float speed;
+    public string color;
+    public int highestSpeed;
+
+    // behaviours of the class
+    void Move()
     {
-        
+        Debug.Log("Moving");
     }
 
-    // Update is called once per frame
-    void Update()
+    void ApplyBrake()
     {
-        
+        Debug.Log("Applying Brake");
     }
+
+    public void CarSpeed()
+    {
+        Debug.Log(speed);
+    }
+
 }
