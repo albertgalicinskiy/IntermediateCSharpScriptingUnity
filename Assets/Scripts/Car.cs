@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable] // with this config we can set public variable with entire Class Car object in the another script and 
+// set values for the Class Car attributes in the Unity Inspector without writing code
+
 public class Car
 {
 
@@ -48,4 +51,10 @@ public class Car
         Debug.Log(speed);
     }
 
+    public void PrintCarDetails()
+    {
+        Debug.Log("Speed = " + speed);
+        Debug.Log("Color = " + color);
+        Debug.Log("HighestSpeed = " + highestSpeed);
+    }
 }
