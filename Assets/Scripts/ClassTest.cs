@@ -25,6 +25,9 @@ public class ClassTest : MonoBehaviour
 
         suzuki.CarSpeed(); // Call function from the Car class
 
+
+        Car myCar2 = new Car(2.5f);
+        Car myCar3 = new Car(2.5f, "Red");
     }
 
     // Update is called once per frame
