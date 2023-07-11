@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class InheritanceTest : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        Enemy enemy = new Enemy(); // new instance of Enemy Class
+        // enemy.Attack();
+
+        Dragon dragon = new Dragon(); // // new instance of Dragon Class
+        dragon.Attack(); // call Attack() function from Enemy Class because we're using inheritance from Enemy Class in Dragon Class
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
