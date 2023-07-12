@@ -11,7 +11,7 @@ public class InheritanceTest : MonoBehaviour
         // enemy.Attack();
 
         Dragon dragon = new Dragon(); // // new instance of Dragon Class
-        dragon.Attack(); // call Attack() function from Enemy Class because we're using inheritance from Enemy Class in Dragon Class
+        // dragon.Attack(); // call Attack() function from Enemy Class because we're using inheritance from Enemy Class in Dragon Class
     }
 
     // Update is called once per frame

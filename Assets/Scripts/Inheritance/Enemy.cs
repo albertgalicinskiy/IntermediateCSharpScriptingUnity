@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy
+public class Enemy : MonoBehaviour
 {
-    public void Attack()
+    protected void Attack()
     {
         Debug.Log("Enemy Atack");
+        GetComponent<Renderer>().material.color = Color.red;
     }
 }
